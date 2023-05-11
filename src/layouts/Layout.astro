@@ -13,7 +13,7 @@ import Footer from "../components/Footer.astro";
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image" href="/megamowgli/logo.png" />
+		<link rel="icon" type="image" href="/megamowgli/favicon.png" />
 		<meta name="generator" content={Astro.generator} />
 		<!-- Fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -30,24 +30,24 @@ import Footer from "../components/Footer.astro";
 
 		<title>{title}</title>
 	</head>
-	<body class="font-sans" >
+	<body class="font-sans">
 		<Navbar />
 		<div
 			class="fixed bottom-4 left-4 z-20 flex flex-col items-center gap-y-1 text-[2.5em] lg:left-10 lg:bottom-10 lg:text-[3em]"
 		>
 			<a
 				href="tel:+972502839256"
-				class="z-20 aspect-square w-fit rounded-full bg-blue-500 text-slate-600 transition-all duration-150 hover:scale-105 hover:shadow-2xl"
+				class="z-20 aspect-square w-fit rounded-full bg-blue-500 text-slate-600 transition-all duration-150 hover:scale-105 shadow-sm hover:shadow-xl p-3"
 				><img
-				class="transition-all hover:scale-110 w-12 h-12 select-none"
-				src="/megamowgli/icons/phone-solid.svg"
-			/></a
+					class="w-10 h-10 select-none invert"
+					src="/megamowgli/icons/phone-solid.svg"
+				/></a
 			>
 			<a
 				href="https://wa.me/972502839256"
-				class="z-20 aspect-square w-fit rounded-full bg-green-500 text-slate-600 transition-all duration-150 hover:scale-105 hover:shadow-2xl p-2"
+				class="z-20 aspect-square w-fit rounded-full bg-green-500 text-slate-600 transition-all duration-150 hover:scale-105 shadow-sm hover:shadow-xl p-2"
 				><img
-					class="transition-all hover:scale-110 w-12 h-12 select-none"
+					class="w-12 h-12 select-none invert"
 					src="/megamowgli/icons/whatsapp.svg"
 				/></a
 			>

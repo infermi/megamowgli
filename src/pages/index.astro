@@ -4,6 +4,7 @@ import Sep from "../components/Sep.astro";
 import Features from "../components/Features.astro";
 import Contact from "../components/Contact.astro";
 import Devider from "../components/Devider.astro";
+import Gallery from "../components/Gallery.astro";
 ---
 
 <Layout title="Megamowgli">
@@ -98,7 +99,7 @@ import Devider from "../components/Devider.astro";
 						קצת עליינו
 					</h2>
 
-					<p class="hidden text-gray-500 md:mt-4 md:block xl:text-lg">
+					<p class="text-gray-500 md:mt-4 xl:text-lg">
 						מגה מוגלי הוקם בשנת 2014 והתמקצע בתפאורות להצגות
 						לתיאטרון. עם השנים פעילות הסטודיו התרחבה לתערוכות
 						ואירועים עסקיים ופרטיים. המוטו שלנו הוא תמיד – "הכל
@@ -125,9 +126,44 @@ import Devider from "../components/Devider.astro";
 				class="h-full w-full object-cover sm:h-[calc(100%_-_2rem)] sm:self-end ltr:sm:rounded-tl-[30px] rtl:sm:rounded-tr-[30px] md:h-[calc(100%_-_4rem)] ltr:md:rounded-tl-[60px] rtl:md:rounded-tr-[60px]"
 			/>
 		</section>
+		<Devider />
+		<div class="flex items-center justify-center">
+			<Gallery />
+		</div>
 
 		<div id="contact"></div>
 		<Devider />
+
+		<figure
+			class="w-screen-md mx-auto text-center bg-black bg-opacity-[2%] py-5 rounded-xl"
+		>
+			<svg
+				aria-hidden="true"
+				class="w-12 h-12 mx-auto mb-3 text-primary"
+				viewBox="0 0 24 27"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
+				><path
+					d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
+					fill="currentColor"></path></svg
+			>
+			<blockquote>
+				<p class="text-2xl font-bold font-varela text-gray-900">
+					״תפקידו של האמן הוא ליצור את השמש בשעה שאיננה.״
+				</p>
+			</blockquote>
+			<figcaption class="flex items-center justify-center mt-6 space-x-3">
+				<div>
+					<cite
+						class="pr-3 font-medium font-varela tracking-wider text-dark_primary"
+						>רומן רולן
+					</cite>
+				</div>
+			</figcaption>
+		</figure>
+
+		<Devider />
+
 		<Contact />
 	</main>
 </Layout>
