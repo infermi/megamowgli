@@ -1,6 +1,6 @@
 ---
 export interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
@@ -10,90 +10,93 @@ import Footer from "../components/Footer.astro";
 
 <!DOCTYPE html>
 <html lang="he" class="scroll-smooth text-center transition-all" dir="rtl">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image" href="/megamowgli/favicon.png" />
-		<meta name="generator" content={Astro.generator} />
-		<!-- Fonts -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Varela+Round&display=swap"
-			rel="stylesheet"
-		/>
-		<!-- Flowbite -->
-		<link
-			href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css"
-			rel="stylesheet"
-		/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image" href="/megamowgli/favicon.png" />
+    <meta name="generator" content={Astro.generator} />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Flowbite -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css"
+      rel="stylesheet"
+    />
 
-		<title>{title}</title>
-	</head>
-	<body class="font-sans">
-		<Navbar />
-		<div
-			class="fixed bottom-4 left-4 z-20 flex flex-col items-center gap-y-1 text-[2.5em] lg:left-10 lg:bottom-10 lg:text-[3em]"
-		>
-			<a
-				href="tel:+972502839256"
-				class="z-20 aspect-square w-fit rounded-full bg-blue-500 text-slate-600 transition-all duration-150 hover:scale-105 shadow-sm hover:shadow-xl p-3"
-				><img
-					class="w-10 h-10 select-none invert"
-					src="/megamowgli/icons/phone-solid.svg"
-				/></a
-			>
-			<a
-				href="https://wa.me/972502839256"
-				class="z-20 aspect-square w-fit rounded-full bg-green-500 text-slate-600 transition-all duration-150 hover:scale-105 shadow-sm hover:shadow-xl p-2"
-				><img
-					class="w-12 h-12 select-none invert"
-					src="/megamowgli/icons/whatsapp.svg"
-				/></a
-			>
-		</div>
-		<div id="modal"
-		
-			class="hidden fixed top-0 left-0  z-40 w-screen h-screen bg-black/70 flex justify-center items-center">
+    <title>{title}</title>
+  </head>
+  <body class="font-sans">
+    <Navbar />
+    <div
+      class="fixed bottom-4 left-4 z-20 flex flex-col items-center gap-y-1 text-[2.5em] lg:bottom-10 lg:left-10 lg:text-[3em]"
+    >
+      <a
+        href="tel:+972502839256"
+        class="z-20 aspect-square w-fit rounded-full bg-blue-500 p-3 text-slate-600 shadow-sm transition-all duration-150 hover:scale-105 hover:shadow-xl"
+        ><img
+          class="h-10 w-10 select-none invert"
+          src="/megamowgli/icons/phone-solid.svg"
+        /></a
+      >
+      <a
+        href="https://wa.me/972502839256"
+        class="z-20 aspect-square w-fit rounded-full bg-green-500 p-2 text-slate-600 shadow-sm transition-all duration-150 hover:scale-105 hover:shadow-xl"
+        ><img
+          class="h-12 w-12 select-none invert"
+          src="/megamowgli/icons/whatsapp.svg"
+        /></a
+      >
+    </div>
+    <div
+      id="modal"
+      class="fixed left-0 top-0 z-40 flex hidden h-screen w-screen items-center justify-center bg-black/70"
+    >
+      <!-- The close button -->
+      <a
+        class="fixed right-8 top-6 z-40 text-6xl font-bold text-gray-50"
+        href="javascript:void(0)"
+        onclick="closeModal()">&times;</a
+      >
 
-			<!-- The close button -->
-			<a class="fixed z-40 top-6 text-gray-50 right-8 text-6xl font-bold" href="javascript:void(0)"
-				onclick="closeModal()">&times;</a>
+      <!-- A big image will be displayed here -->
+      <img id="modal-img" class="max-h-[600px] max-w-[800px] object-cover" />
+    </div>
+    <slot />
 
-			<!-- A big image will be displayed here -->
-			<img id="modal-img" class="max-w-[800px]   max-h-[600px] object-cover"  />
-		</div>
-		<slot />
-		
-		<Footer />
-		<!-- Flowbite -->
-		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"
-		></script>
+    <Footer />
+    <!-- Flowbite -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"
+    ></script>
 
-		<!-- Ripple effect -->
-		<script
-			src="https://unpkg.com/@material-tailwind/html@latest/scripts/ripple.js"
-		></script>
+    <!-- AOS -->
+    <script is:inline src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script is:inline>
+      AOS.init({ delay: 200, duration: 500, once: true });
+    </script>
 
+    <script is:inline>
+      // Get the modal by id
+      var modal = document.getElementById("modal");
 
-		<script is:inline>
-			// Get the modal by id
-			var modal = document.getElementById("modal");
-	
-			// Get the modal image tag
-			var modalImg = document.getElementById("modal-img");
-	
-			// this function is called when a small image is clicked
-			function showModal(src) {
-				modal.classList.remove('hidden');
-				modalImg.src = src;
-			}
-	
-			// this function is called when the close button is clicked
-			function closeModal() {
-				modal.classList.add('hidden');
-			}
-		</script>
-	</body>
+      // Get the modal image tag
+      var modalImg = document.getElementById("modal-img");
+
+      // this function is called when a small image is clicked
+      function showModal(src) {
+        modal.classList.remove("hidden");
+        modalImg.src = src;
+      }
+
+      // this function is called when the close button is clicked
+      function closeModal() {
+        modal.classList.add("hidden");
+      }
+    </script>
+  </body>
 </html>

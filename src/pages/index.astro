@@ -8,310 +8,305 @@ import Gallery from "../components/Gallery.astro";
 ---
 
 <Layout title="Megamowgli">
-	<main class="relative">
-		<section
-			class="relative flex min-h-[75vh] w-full flex-col items-center justify-center text-center"
-		>
-			<img class="" src="/megamowgli/logo.png" alt="" />
-			<div class="max-w-xl px-8 text-white lg:max-w-4xl">
-				<Sep />
-				<h1 class="font-heebo text-4xl font-bold xl:text-5xl">
-					תיכנון ובניית תפאורות להצגות, אירועים ותערוכות.
-				</h1>
+  <main class="relative">
+    <!-- HEADER -->
+    <section
+      class="relative flex min-h-[75vh] w-full flex-col items-center justify-center text-center"
+    >
+      <img class="" src="/megamowgli/logo.png" alt="" />
+      <div class="max-w-xl px-8 text-white lg:max-w-4xl">
+        <Sep />
+        <h1 class="font-heebo text-4xl font-bold xl:text-5xl">
+          תיכנון ובניית תפאורות להצגות, אירועים ותערוכות.
+        </h1>
 
-				<div
-					class="mt-5 flex flex-row justify-center gap-5 font-heebo font-bold"
-				>
-					<a
-						data-ripple-light="true"
-						href="#about"
-						class="inline-block w-fit cursor-pointer rounded-md bg-primary px-5 py-3 tracking-wider text-text_color transition-all hover:scale-105"
-					>
-						קרא עוד
-					</a>
-					<a
-						data-ripple-light="true"
-						href="#contact"
-						class="inline-block w-fit cursor-pointer rounded-md border-2 border-primary bg-transparent px-5 py-3 tracking-wider text-text_color backdrop-blur-md transition-all hover:scale-105"
-					>
-						צור קשר
-					</a>
-				</div>
-			</div>
+        <div
+          class="mt-5 flex flex-row justify-center gap-5 font-heebo font-bold"
+        >
+          <a
+            data-ripple-light="true"
+            href="#about"
+            class="inline-block w-fit cursor-pointer rounded-md bg-primary px-5 py-3 tracking-wider text-text_color transition-all hover:scale-105"
+          >
+            קרא עוד
+          </a>
+          <a
+            data-ripple-light="true"
+            href="#contact"
+            class="inline-block w-fit cursor-pointer rounded-md border-2 border-primary bg-transparent px-5 py-3 tracking-wider text-text_color backdrop-blur-md transition-all hover:scale-105"
+          >
+            צור קשר
+          </a>
+        </div>
+      </div>
 
-			<img
-				loading="lazy"
-				src="/megamowgli/hero-banner.jpeg"
-				alt=""
-				class="absolute top-0 -z-10 h-full w-full object-cover object-center brightness-[25%]"
-			/>
-		</section>
-		<section class="scroll-m-16 bg-home py-7 text-center" id="goals">
-			<div
-				class="mx-auto flex w-full max-w-screen-xl flex-grow flex-col items-stretch justify-center gap-5 px-3 text-center md:flex-1 md:flex-row md:px-10"
-			>
-				<div class="order-1 w-full md:order-3 lg:w-7/12">
-					<img
-						src="/megamowgli/side-image.jpg"
-						alt=""
-						loading="lazy"
-						class="object-cover md:aspect-square rounded-lg md:mr-10"
-					/>
-				</div>
-				<div class="order-2 w-full">
-					<h1 class="font-varela text-4xl font-bold xl:text-5xl">
-						החזון שלנו
-					</h1>
-					<Sep />
+      <img
+        loading="lazy"
+        src="/megamowgli/hero-banner.jpeg"
+        alt=""
+        class="absolute top-0 -z-10 h-full w-full object-cover object-center brightness-[25%]"
+      />
+    </section>
+    <!-- GOALS -->
+    <section class="scroll-m-16 bg-home py-7 text-center" id="goals">
+      <div
+        class="mx-auto flex w-full max-w-screen-xl flex-grow flex-col items-stretch justify-center gap-5 px-3 text-center md:flex-1 md:flex-row md:px-10"
+      >
+        <div class="order-1 w-full md:order-3 lg:w-7/12">
+          <img
+            src="/megamowgli/side-image.jpg"
+            alt=""
+            loading="lazy"
+            class="rounded-lg object-cover md:mr-10 md:aspect-square"
+          />
+        </div>
+        <div class="order-2 w-full">
+          <h1 class="font-varela text-4xl font-bold xl:text-5xl">החזון שלנו</h1>
+          <Sep />
 
-					<p
-						class="mx-auto max-w-5xl text-base sm:text-lg md:text-xl xl:text-2xl my-12"
-					>
-						כל מה שתוכלו לדמיין, אנו ניצור. לסטודיו טכניקות מגוונות
-						ויצירתיות, שימוש בחומרים ממוחזרים למקסום התקציב. למגה
-						מוגלי ניסיון עשיר בהפקות תיאטרון ואנו מוכנים תמיד לכל
-						אתגר, שאיפה וחלום שלקוחותינו רוצים להגשים.
-					</p>
-					<button
-						data-ripple-light="true"
-						class="order-4 mx-auto block rounded-md bg-primary px-5 py-3 tracking-wider text-text_color transition-all hover:scale-105"
-					>
-						קבע שיחת הכירות
-					</button>
-				</div>
-			</div>
-		</section>
+          <p
+            class="mx-auto my-12 max-w-5xl text-base sm:text-lg md:text-xl xl:text-2xl"
+          >
+            כל מה שתוכלו לדמיין, אנו ניצור. לסטודיו טכניקות מגוונות ויצירתיות,
+            שימוש בחומרים ממוחזרים למקסום התקציב. למגה מוגלי ניסיון עשיר בהפקות
+            תיאטרון ואנו מוכנים תמיד לכל אתגר, שאיפה וחלום שלקוחותינו רוצים
+            להגשים.
+          </p>
+          <button
+            data-ripple-light="true"
+            class="order-4 mx-auto block rounded-md bg-primary px-5 py-3 tracking-wider text-text_color transition-all hover:scale-105"
+          >
+            קבע שיחת הכירות
+          </button>
+        </div>
+      </div>
+    </section>
 
-		<div id="services"></div>
-		<Devider />
-		<Features />
-		<Devider />
-		<h1 class="font-varela text-4xl font-bold xl:text-5xl">שירותים</h1>
-		<Sep />
-		<section
-			class="w-full flex flex-col md:flex-row justify-center items-center gap-14 md:px-36 py-12"
-		>
-			<div
-				class="group block aspect-square w-1/2 md:w-2/6 overflow-hidden bg-[url('/megamowgli/gallery/1.jpg')] bg-cover rounded-lg"
-			>
-				<div
-					class="flex h-full w-full transition-all duration-500 ease-out group-hover:bg-[rgba(0,0,0,.25)]"
-				>
-					<div
-						class="mt-auto w-full md:translate-y-[100%] bg-black bg-opacity-50 py-2 text-center text-white transition-all md:group-hover:translate-y-0"
-					>
-						<h3 class="text-3xl md:text-4xl">קליפים</h3>
-						<p class="text-sm md:text-xl">ציוד תפאורה לקליפים</p>
-					</div>
-				</div>
-			</div>
-			<div
-				class="group block aspect-square w-1/2 md:w-2/6 overflow-hidden bg-[url('/megamowgli/gallery/9.jpg')] bg-cover rounded-lg"
-			>
-				<div
-					class="flex h-full w-full transition-all duration-500 ease-out group-hover:bg-[rgba(0,0,0,.25)]"
-				>
-					<div
-						class="mt-auto w-full md:translate-y-[100%] bg-black bg-opacity-50 py-2 text-center text-white transition-all md:group-hover:translate-y-0"
-					>
-						<h3 class="text-3xl md:text-4xl">תיאטרון</h3>
-						<p class="text-sm md:text-xl">ציוד תיאטרונות והצגות</p>
-					</div>
-				</div>
-			</div>
-			<div
-				class="group block aspect-square w-1/2 md:w-2/6 overflow-hidden bg-[url('/megamowgli/gallery/6.jpg')] bg-cover rounded-lg"
-			>
-				<div
-					class="flex h-full w-full transition-all duration-500 ease-out group-hover:bg-[rgba(0,0,0,.25)]"
-				>
-					<div
-						class="mt-auto w-full md:translate-y-[100%] bg-black bg-opacity-50 py-2 text-center text-white transition-all md:group-hover:translate-y-0"
-					>
-						<h3 class="text-3xl md:text-4xl">מתחמי לימודים</h3>
-						<p class="text-sm md:text-xl">
-							ציוד לבתי ספר ומקומות לימוד אחרים
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
+    <div id="services"></div>
+    <Devider />
+    <Features />
+    <Devider />
+    <h1 class="font-varela text-4xl font-bold xl:text-5xl">שירותים</h1>
+    <Sep />
+    <section
+      class="flex w-full flex-col items-center justify-center gap-14 py-12 md:flex-row md:px-36"
+    >
+      <div
+        class="group block aspect-square w-1/2 overflow-hidden rounded-lg bg-[url('/megamowgli/gallery/1.jpg')] bg-cover md:w-2/6"
+      >
+        <div
+          class="flex h-full w-full transition-all duration-500 ease-out group-hover:bg-[rgba(0,0,0,.25)]"
+        >
+          <div
+            class="mt-auto w-full bg-black bg-opacity-50 py-2 text-center text-white transition-all md:translate-y-[100%] md:group-hover:translate-y-0"
+          >
+            <h3 class="text-3xl md:text-4xl">קליפים</h3>
+            <p class="text-sm md:text-xl">ציוד תפאורה לקליפים</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="group block aspect-square w-1/2 overflow-hidden rounded-lg bg-[url('/megamowgli/gallery/9.jpg')] bg-cover md:w-2/6"
+      >
+        <div
+          class="flex h-full w-full transition-all duration-500 ease-out group-hover:bg-[rgba(0,0,0,.25)]"
+        >
+          <div
+            class="mt-auto w-full bg-black bg-opacity-50 py-2 text-center text-white transition-all md:translate-y-[100%] md:group-hover:translate-y-0"
+          >
+            <h3 class="text-3xl md:text-4xl">תיאטרון</h3>
+            <p class="text-sm md:text-xl">ציוד תיאטרונות והצגות</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="group block aspect-square w-1/2 overflow-hidden rounded-lg bg-[url('/megamowgli/gallery/6.jpg')] bg-cover md:w-2/6"
+      >
+        <div
+          class="flex h-full w-full transition-all duration-500 ease-out group-hover:bg-[rgba(0,0,0,.25)]"
+        >
+          <div
+            class="mt-auto w-full bg-black bg-opacity-50 py-2 text-center text-white transition-all md:translate-y-[100%] md:group-hover:translate-y-0"
+          >
+            <h3 class="text-3xl md:text-4xl">מתחמי לימודים</h3>
+            <p class="text-sm md:text-xl">ציוד לבתי ספר ומקומות לימוד אחרים</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-		<section
-			class="overflow-hidden bg-gray-50 sm:grid sm:grid-cols-2 sm:items-center"
-			id="about"
-		>
-			<div class="p-8 md:p-12 lg:px-16 lg:py-24">
-				<div class="mx-auto max-w-2xl text-center sm:text-right">
-					<h2
-						class="font-varela text-2xl font-bold text-gray-900 md:text-3xl"
-					>
-						קצת עליינו
-					</h2>
+    <section
+      class="overflow-hidden bg-gray-50 sm:grid sm:grid-cols-2 sm:items-center"
+      id="about"
+    >
+      <div class="p-8 md:p-12 lg:px-16 lg:py-24">
+        <div class="mx-auto max-w-2xl text-center sm:text-right">
+          <h2 class="font-varela text-2xl font-bold text-gray-900 md:text-3xl">
+            קצת עליינו
+          </h2>
 
-					<p class="text-gray-500 md:mt-4 xl:text-lg">
-						מגה מוגלי הוקם בשנת 2014 והתמקצע בתפאורות להצגות
-						לתיאטרון. עם השנים פעילות הסטודיו התרחבה לתערוכות
-						ואירועים עסקיים ופרטיים. המוטו שלנו הוא תמיד – "הכל
-						אפשרי!" דרך פעולה שאפשר לראות בכל פרוייקט שלנו וגישה
-						שמלווה אותנו מתחילת דרכינו. אנו מאמינים במתן פתרונות
-						ללקוחתינו, בצורה פרקטית, יצירתית, ומיוחדת.
-					</p>
+          <p class="text-gray-500 md:mt-4 xl:text-lg">
+            מגה מוגלי הוקם בשנת 2014 והתמקצע בתפאורות להצגות לתיאטרון. עם השנים
+            פעילות הסטודיו התרחבה לתערוכות ואירועים עסקיים ופרטיים. המוטו שלנו
+            הוא תמיד – "הכל אפשרי!" דרך פעולה שאפשר לראות בכל פרוייקט שלנו וגישה
+            שמלווה אותנו מתחילת דרכינו. אנו מאמינים במתן פתרונות ללקוחתינו,
+            בצורה פרקטית, יצירתית, ומיוחדת.
+          </p>
 
-					<div class="mt-4 md:mt-8">
-						<a
-							class="inline-block rounded bg-primary px-8 py-3 text-sm font-medium text-white transition hover:rotate-2 hover:scale-110 focus:outline-none focus:ring active:bg-dark_primary"
-							href="#contact"
-						>
-							צרו קשר
-						</a>
-					</div>
-				</div>
-			</div>
+          <div class="mt-4 md:mt-8">
+            <a
+              class="inline-block rounded bg-primary px-8 py-3 text-sm font-medium text-white transition hover:rotate-2 hover:scale-110 focus:outline-none focus:ring active:bg-dark_primary"
+              href="#contact"
+            >
+              צרו קשר
+            </a>
+          </div>
+        </div>
+      </div>
 
-			<img
-				alt=""
-				loading="lazy"
-				src="/megamowgli/about.jpg"
-				class="h-full w-full object-cover sm:h-[calc(100%_-_2rem)] sm:self-end ltr:sm:rounded-tl-[30px] rtl:sm:rounded-tr-[30px] md:h-[calc(100%_-_4rem)] ltr:md:rounded-tl-[60px] rtl:md:rounded-tr-[60px]"
-			/>
-		</section>
-		<Devider />
+      <img
+        alt=""
+        loading="lazy"
+        src="/megamowgli/about.jpg"
+        class="h-full w-full object-cover sm:h-[calc(100%_-_2rem)] sm:self-end ltr:sm:rounded-tl-[30px] rtl:sm:rounded-tr-[30px] md:h-[calc(100%_-_4rem)] ltr:md:rounded-tl-[60px] rtl:md:rounded-tr-[60px]"
+      />
+    </section>
+    <Devider />
 
-		<section class="p-5 md:p-32">
-			<Gallery />
-		</section>
+    <section class="p-5 md:p-32">
+      <Gallery />
+    </section>
 
-		<div id="contact"></div>
-		<Devider />
+    <div id="contact"></div>
+    <Devider />
 
-		<figure
-			class="w-screen-md mx-auto text-center bg-black bg-opacity-[2%] py-5 rounded-xl"
-		>
-			<svg
-				aria-hidden="true"
-				class="w-12 h-12 mx-auto mb-3 text-primary"
-				viewBox="0 0 24 27"
-				fill="none"
-				xmlns="http://www.w3.org/2000/svg"
-				><path
-					d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
-					fill="currentColor"></path></svg
-			>
-			<blockquote>
-				<p class="text-2xl font-bold font-varela text-gray-900">
-					״תפקידו של האמן הוא ליצור את השמש בשעה שאיננה.״
-				</p>
-			</blockquote>
-			<figcaption class="flex items-center justify-center mt-6 space-x-3">
-				<div>
-					<cite
-						class="pr-3 font-medium font-varela tracking-wider text-dark_primary"
-						>רומן רולן
-					</cite>
-				</div>
-			</figcaption>
-		</figure>
+    <figure
+      class="w-screen-md mx-auto rounded-xl bg-black bg-opacity-[2%] py-5 text-center"
+    >
+      <svg
+        aria-hidden="true"
+        class="mx-auto mb-3 h-12 w-12 text-primary"
+        viewBox="0 0 24 27"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        ><path
+          d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
+          fill="currentColor"></path></svg
+      >
+      <blockquote>
+        <p class="font-varela text-2xl font-bold text-gray-900">
+          ״תפקידו של האמן הוא ליצור את השמש בשעה שאיננה.״
+        </p>
+      </blockquote>
+      <figcaption class="mt-6 flex items-center justify-center space-x-3">
+        <div>
+          <cite
+            class="pr-3 font-varela font-medium tracking-wider text-dark_primary"
+            >רומן רולן
+          </cite>
+        </div>
+      </figcaption>
+    </figure>
 
-		<Devider />
+    <Devider />
 
-		<Contact />
-	</main>
+    <Contact />
+  </main>
 </Layout>
 <!-- step form -->
 <script is:inline>
-	var currentTab = 0; // Current tab is set to be the first tab (0)
-	showTab(currentTab); // Display the current tab
+  var currentTab = 0; // Current tab is set to be the first tab (0)
+  showTab(currentTab); // Display the current tab
 
-	function showTab(n) {
-		// This function will display the specified tab of the form ...
-		var x = document.getElementsByClassName("tab");
-		x[n].style.display = "block";
-		// ... and fix the Previous/Next buttons:
-		if (n == 0) {
-			document.getElementById("prevBtn").style.display = "none";
-		} else {
-			document.getElementById("prevBtn").style.display = "inline";
-		}
-		if (n == x.length - 1) {
-			document.getElementById("nextBtn").innerHTML = "שלח";
-		} else {
-			document.getElementById("nextBtn").innerHTML = "הבא";
-		}
-	}
+  function showTab(n) {
+    // This function will display the specified tab of the form ...
+    var x = document.getElementsByClassName("tab");
+    x[n].style.display = "block";
+    // ... and fix the Previous/Next buttons:
+    if (n == 0) {
+      document.getElementById("prevBtn").style.display = "none";
+    } else {
+      document.getElementById("prevBtn").style.display = "inline";
+    }
+    if (n == x.length - 1) {
+      document.getElementById("nextBtn").innerHTML = "שלח";
+    } else {
+      document.getElementById("nextBtn").innerHTML = "הבא";
+    }
+  }
 
-	function nextPrev(n) {
-		// This function will figure out which tab to display
-		var x = document.getElementsByClassName("tab");
-		// Exit the function if any field in the current tab is invalid:
-		if (n == 1 && !validateForm()) return false;
-		// Hide the current tab:
-		x[currentTab].style.display = "none";
-		// Increase or decrease the current tab by 1:
-		currentTab = currentTab + n;
-		// if you have reached the end of the form... :
-		if (currentTab >= x.length) {
-			//...the form gets submitted:
-			document.getElementById("regForm").submit();
-			return false;
-		}
-		var progressbar = document.getElementById("progress");
-		progressbar.style.display = "block";
-		progressbar.children[0].style.width =
-			((currentTab / x.length) * 100).toString() + "%";
-		// Otherwise, display the correct tab:
-		showTab(currentTab);
-	}
+  function nextPrev(n) {
+    // This function will figure out which tab to display
+    var x = document.getElementsByClassName("tab");
+    // Exit the function if any field in the current tab is invalid:
+    if (n == 1 && !validateForm()) return false;
+    // Hide the current tab:
+    x[currentTab].style.display = "none";
+    // Increase or decrease the current tab by 1:
+    currentTab = currentTab + n;
+    // if you have reached the end of the form... :
+    if (currentTab >= x.length) {
+      //...the form gets submitted:
+      document.getElementById("regForm").submit();
+      return false;
+    }
+    var progressbar = document.getElementById("progress");
+    progressbar.style.display = "block";
+    progressbar.children[0].style.width =
+      ((currentTab / x.length) * 100).toString() + "%";
+    // Otherwise, display the correct tab:
+    showTab(currentTab);
+  }
 
-	function validateForm() {
-		// This function deals with validation of the form fields
-		var x,
-			y,
-			i,
-			valid = true;
-		x = document.getElementsByClassName("tab");
-		y = x[currentTab].getElementsByTagName("input");
-		if (y.length == 0) {
-			y = x[currentTab].getElementsByTagName("select");
-		}
-		// A loop that checks every input field in the current tab:
-		for (i = 0; i < y.length; i++) {
-			// If a field is empty...
-			console.log(!y[i].checked);
-			if (
-				(y[i].value == "" ||
-					(!y[i].checked && y[i].type == "checkbox") ||
-					(y[i].name == "טלפון" && !/^\d+$/.test(y[i].value))) &&
-				y[i].required == true
-			) {
-				// add an "invalid" class to the field:
-				y[i].className += " border-red-600";
-				// and set the current valid status to false:
-				valid = false;
-			}
-		}
+  function validateForm() {
+    // This function deals with validation of the form fields
+    var x,
+      y,
+      i,
+      valid = true;
+    x = document.getElementsByClassName("tab");
+    y = x[currentTab].getElementsByTagName("input");
+    if (y.length == 0) {
+      y = x[currentTab].getElementsByTagName("select");
+    }
+    // A loop that checks every input field in the current tab:
+    for (i = 0; i < y.length; i++) {
+      // If a field is empty...
+      console.log(!y[i].checked);
+      if (
+        (y[i].value == "" ||
+          (!y[i].checked && y[i].type == "checkbox") ||
+          (y[i].name == "טלפון" && !/^\d+$/.test(y[i].value))) &&
+        y[i].required == true
+      ) {
+        // add an "invalid" class to the field:
+        y[i].className += " border-red-600";
+        // and set the current valid status to false:
+        valid = false;
+      }
+    }
 
-		return valid; // return the valid status
-	}
+    return valid; // return the valid status
+  }
 </script>
 <!-- accesibility -->
 <script>
-	const callback = function (entries: IntersectionObserverEntry[]) {
-		entries.forEach((entry: IntersectionObserverEntry) => {
-			console.log(entry);
+  const callback = function (entries: IntersectionObserverEntry[]) {
+    entries.forEach((entry: IntersectionObserverEntry) => {
+      console.log(entry);
 
-			if (entry.isIntersecting) {
-				entry.target.classList.add("animate-fadeIn");
-			} else {
-				entry.target.classList.remove("animate-fadeIn");
-			}
-		});
-	};
-	const observer = new IntersectionObserver(callback);
+      if (entry.isIntersecting) {
+        entry.target.classList.add("animate-fadeIn");
+      } else {
+        entry.target.classList.remove("animate-fadeIn");
+      }
+    });
+  };
+  const observer = new IntersectionObserver(callback);
 
-	const targets = document.querySelectorAll(".js-show-on-scroll");
-	targets.forEach(function (target) {
-		target.classList.add("opacity-0");
-		observer.observe(target);
-	});
+  const targets = document.querySelectorAll(".js-show-on-scroll");
+  targets.forEach(function (target) {
+    target.classList.add("opacity-0");
+    observer.observe(target);
+  });
 </script>

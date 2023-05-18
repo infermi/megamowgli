@@ -4,16 +4,17 @@ const GALLERYIMAGES = Array.from({ length: 10 }, (_, i) => i + 1);
 ---
 
 <div class="-z-10 grid grid-cols-2 gap-4 md:grid-cols-4" id="gallery">
-	{
-		GALLERYIMAGES.map((image) => (
-			<div>
-				<img
-					class="aspect-square h-auto max-w-full rounded-lg object-cover"
-					onclick={`showModal('${GALLERYPATH + image + ".jpg"}')`}
-					src={GALLERYPATH + image + ".jpg"}
-					alt=""
-				/>
-			</div>
-		))
-	}
+  {
+    GALLERYIMAGES.map((image) => (
+      <div>
+        <img
+          data-aos="fade"
+          class="aspect-square h-auto max-w-full cursor-pointer rounded-lg object-cover hover:brightness-95"
+          onclick={`showModal('${GALLERYPATH + image + ".jpg"}')`}
+          src={GALLERYPATH + image + ".jpg"}
+          alt=""
+        />
+      </div>
+    ))
+  }
 </div>
