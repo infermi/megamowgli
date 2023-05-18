@@ -52,7 +52,19 @@ import Footer from "../components/Footer.astro";
 				/></a
 			>
 		</div>
+		<div id="modal"
+		
+			class="hidden fixed top-0 left-0  z-40 w-screen h-screen bg-black/70 flex justify-center items-center">
+
+			<!-- The close button -->
+			<a class="fixed z-40 top-6 text-gray-50 right-8 text-6xl font-bold" href="javascript:void(0)"
+				onclick="closeModal()">&times;</a>
+
+			<!-- A big image will be displayed here -->
+			<img id="modal-img" class="max-w-[800px]   max-h-[600px] object-cover"  />
+		</div>
 		<slot />
+		
 		<Footer />
 		<!-- Flowbite -->
 		<script
@@ -63,5 +75,25 @@ import Footer from "../components/Footer.astro";
 		<script
 			src="https://unpkg.com/@material-tailwind/html@latest/scripts/ripple.js"
 		></script>
+
+
+		<script is:inline>
+			// Get the modal by id
+			var modal = document.getElementById("modal");
+	
+			// Get the modal image tag
+			var modalImg = document.getElementById("modal-img");
+	
+			// this function is called when a small image is clicked
+			function showModal(src) {
+				modal.classList.remove('hidden');
+				modalImg.src = src;
+			}
+	
+			// this function is called when the close button is clicked
+			function closeModal() {
+				modal.classList.add('hidden');
+			}
+		</script>
 	</body>
 </html>

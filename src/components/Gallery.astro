@@ -9,6 +9,7 @@ const GALLERYIMAGES = Array.from({ length: 10 }, (_, i) => i + 1);
 			<div>
 				<img
 					class="aspect-square h-auto max-w-full rounded-lg object-cover"
+					onclick={`showModal('${GALLERYPATH + image + ".jpg"}')`}
 					src={GALLERYPATH + image + ".jpg"}
 					alt=""
 				/>
