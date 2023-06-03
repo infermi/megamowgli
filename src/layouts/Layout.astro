@@ -6,6 +6,8 @@ export interface Props {
 const { title } = Astro.props;
 import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
+import Devider from "../components/Devider.astro";
+import Contact from "../components/Contact.astro";
 ---
 
 <!DOCTYPE html>
@@ -67,6 +69,9 @@ import Footer from "../components/Footer.astro";
       <img id="modal-img" class="max-h-[600px] max-w-[800px] object-cover" />
     </div>
     <slot />
+    <Devider />
+
+    <Contact />
 
     <Footer />
     <!-- Flowbite -->

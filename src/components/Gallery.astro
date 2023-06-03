@@ -1,25 +1,24 @@
 ---
-const GALLERYPATH = "/megamowgli/gallery/";
+const { path } = Astro.props;
 const GALLERYIMAGES = Array.from({ length: 10 }, (_, i) => i + 1);
 ---
 
 <div class="-z-10 grid grid-cols-2 gap-4 md:grid-cols-4" id="gallery">
-	{
-		GALLERYIMAGES.map((image) => (
-			<div>
-				<img
-					data-aos="fade"
-					class="h-auto max-w-full cursor-pointer rounded-lg object-cover hover:brightness-95"
-					onclick={`showModal('${GALLERYPATH + image + ".jpg"}')`}
-					src={GALLERYPATH + image + ".jpg"}
-					alt=""
-				/>
-			</div>
-		))
-	}
+  {
+    GALLERYIMAGES.map((image) => (
+      <div>
+        <img
+          data-aos="fade"
+          class="h-auto max-w-full cursor-pointer rounded-lg object-cover hover:brightness-95"
+          src={path + image + ".jpg"}
+          alt=""
+        />
+      </div>
+    ))
+  }
 </div>
 
-<h1 class="font-varela text-4xl font-bold xl:text-5xl">קליפים</h1>
+<!-- <h1 class="font-varela text-4xl font-bold xl:text-5xl">קליפים</h1>
 <div class="flex flex-col md:flex-row gap-2">
 	<div class="border-2 rounded-lg">
 		<a href="https://youtu.be/JwTtlNGXaDQ" target="_blank">
@@ -51,4 +50,4 @@ const GALLERYIMAGES = Array.from({ length: 10 }, (_, i) => i + 1);
 			/>
 		</a>
 	</div>
-</div>
+</div> -->
