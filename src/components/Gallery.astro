@@ -1,5 +1,6 @@
 ---
 const { path } = Astro.props;
+
 const GALLERYIMAGES = Array.from({ length: 10 }, (_, i) => i + 1);
 ---
 
@@ -9,8 +10,8 @@ const GALLERYIMAGES = Array.from({ length: 10 }, (_, i) => i + 1);
       <div>
         <img
           data-aos="fade"
-          class="h-auto max-w-full cursor-pointer rounded-lg object-cover hover:brightness-95"
-          src={path + image + ".jpg"}
+          class="aspect-square h-auto max-w-full cursor-pointer rounded-lg object-cover hover:brightness-95"
+          src={"/megamowgli/gallery/" + path + image + ".jpg"}
           alt=""
         />
       </div>
